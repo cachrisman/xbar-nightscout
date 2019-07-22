@@ -76,11 +76,13 @@ function writeOutput(data) {
 
   console.log(`${top_line}
 ---
-Last Reading: ${date.toLocaleString()}
-Blood Glucose: ${glucose}
-Trend: ${trend}
-Direction: ${direction} ${symbols[direction]}
----
+Last Reading: ${date.toLocaleTimeString()}
+Details
+--Last Reading: ${date.toLocaleString()}
+--Blood Glucose: ${glucose}
+--Trend: ${trend}
+--Direction: ${direction} ${symbols[direction]}
+Open Nightscout | href=https://${hostname}/?token=${token}
 Refresh | refresh=true terminal=false
 ---
 BitBar Nightscout Plugin v${ver}
