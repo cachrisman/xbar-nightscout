@@ -1,0 +1,2 @@
+# bitbar-nightscout
+Nightscout monitor
